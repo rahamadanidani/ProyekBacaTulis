@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="id.rahma.proyekbacatulis">
-
+// pada saat kita melakukan permintaan izin dalam membaca dan menyimpan eksternal
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
@@ -14,6 +14,9 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
+
+            /*Filter intent akan membuka komponen untuk menerima intent dari jenis yang diberitahukan,
+            sekaligus memfilter yang tidak bermanfaat bagi komponen.*/
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
